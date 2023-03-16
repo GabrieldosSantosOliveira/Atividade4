@@ -1,51 +1,24 @@
-import { StatusBar } from "expo-status-bar";
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
-import { useState } from "react";
+import {
+  useFonts,
+  Lexend_700Bold,
+  Lexend_600SemiBold,
+} from '@expo-google-fonts/lexend';
+import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import { Loading } from './src/components/Loading';
+import { Home } from './src/screens/Home';
+import { Theme } from './src/styles/Theme';
 export default function App() {
-  const [value, setValue] = useState({ friends: 0, price: 0 });
-  const [calc, setCalc] = useState({ calc: 0 });
-  const handleInputChangeFriends = (e: string) => {
-    setValue({ ...value, friends: Number(e) });
-  };
-  const handleInputChangePrice = (e: string) => {
-    setValue({ ...value, price: Number(e) });
-  };
-  const calcular = () => {
-    const { friends, price } = value;
-    const calc = price / friends;
-    setCalc({ calc: calc });
-  };
+  const { colors } = Theme;
+  const [isFontsLoaded] = useFonts({
+    Lexend_600SemiBold,
+    Lexend_700Bold,
+  });
   return (
-    <View style={styles.container}>
-      <TextInput
-        onChangeText={(e) => {
-          handleInputChangePrice(e);
-        }}
-        placeholder="Valor"
-      />
-      <TextInput
-        onChangeText={(e) => {
-          handleInputChangeFriends(e);
-        }}
-        placeholder="Amigos"
-      />
-      <StatusBar style="auto" />
-      <Text>O valor do Racha é : {calc.calc}</Text>
-      <Button
-        title="Caluclar Valor"
-        onPress={() => {
-          calcular();
-        }}
-      />
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar backgroundColor={colors.background} style="light" />
+      {isFontsLoaded ? <Home /> : <Loading />}
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    display: "flex",
-    alignContent: "center",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
