@@ -1,5 +1,5 @@
 <p align="center">
-<img width="200px" src="https://user-images.githubusercontent.com/86084272/225710603-4d09cfd7-4400-4f58-9b95-d046c505a756.png"/> </p>
+<img width="200px" src="https://user-images.githubusercontent.com/86084272/225719468-b5e77fc1-a8cb-429b-a581-26e2b1bda9e9.png"/> </p>
 
  ## <p align="center"> Split Count <a href="LICENSE"> <img  src="https://img.shields.io/static/v1?label=License&message=MIT&color=&labelColor=202024" alt="License"></a> </p>
 O Split Count é uma aplicação que facilita no momento de rachar a conta entre amigos, nesse projeto foi utilizado o pattern de composição para a criação de inputs.
