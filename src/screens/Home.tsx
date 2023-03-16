@@ -74,7 +74,7 @@ export const Home: FC = () => {
             />
           </Root>
         </View>
-        <Button text="Confirmar" onPress={handleCalculateSplitValue} />
+        <Button text="Calcular" onPress={handleCalculateSplitValue} />
       </View>
       <Modal transparent visible={isModalVisible}>
         <Result
