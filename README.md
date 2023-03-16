@@ -2,9 +2,11 @@
 <img width="200px" src="https://user-images.githubusercontent.com/86084272/225710603-4d09cfd7-4400-4f58-9b95-d046c505a756.png"/> </p>
 
  ## <p align="center"> Split Count <a href="LICENSE"> <img  src="https://img.shields.io/static/v1?label=License&message=MIT&color=&labelColor=202024" alt="License"></a> </p>
-O Split Count é uma aplicação que facilita no momento de rachar a conta entre amigos, nesel foi utilizado o pattern de composição para a criação de inputs.
+O Split Count é uma aplicação que facilita no momento de rachar a conta entre amigos, nesse projeto foi utilizado o pattern de composição para a criação de inputs.
+E a api de Intl para a formatação do dinheiro e o PixelRatio do react native para um design responsivo
+
 ## 🔖 Demonstração
-https://user-images.githubusercontent.com/86084272/219445161-bb0d77ef-2d65-4005-8429-ec03b538861b.mp4
+https://user-images.githubusercontent.com/86084272/225712288-d450cbde-df34-46c2-9978-9bffd50e8431.mp4
 
 
 ## 🛠️ Tecnologias
